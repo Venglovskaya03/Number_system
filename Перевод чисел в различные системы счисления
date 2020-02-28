@@ -1,0 +1,22 @@
+a=int(input())
+def change(a):
+  rez=''
+  while a>0:
+    c=a%8
+    rez=str(c)+rez
+    a=a//8
+  return rez
+
+print('Число {:d} в 8-ой СС={:s}'.format(a, change(a))
+__________
+a, n=map(int, input())
+def change(a, n):
+  rez=''
+  while a>0 and n!=10:
+    c=a%n
+    rez=str(c)+rez
+    a=a//n
+  return rez
+
+print('Число {:d} в {:d}-ой СС={:s}'.format(a, n, change(a))
+__________
